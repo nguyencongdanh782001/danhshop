@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+:root{
+  --height-img:240px;
+  --object-fit-img:cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  width: 100%;
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title-product {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.img-product {
+  height: var(--height-img);
+  object-fit: var(--object-fit-img);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-product {
+  display: flex;
+  justify-content: right;
+}
+.img-product-cart {
+  height: var(--height-img);
+  object-fit: var(--object-fit-img);
+}
+.total-cart-btn{
+  display: flex;
+  justify-content: right;
+}
+.math-btn{
+  position: relative;
+  display: flex;
+}
+.math-btn .Delete-btn{
+  position: absolute;
+  right: 0;
+}
+.product-cart{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.home{
+  text-decoration: none;
+  color: rgb(148, 148, 148);
+}
+.emty-cart-link{
+  text-decoration: none;
 }
